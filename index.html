@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crescendelle | Elite Community Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Global Background Wallpaper (Untuk Tablet & Desktop View) -->
+    <div class="global-wallpaper"></div>
+    <div class="global-overlay"></div>
+
+    <!-- Responsive Wrapper -->
+    <div class="page-wrapper">
+        <!-- Phone Frame -->
+        <div class="phone-frame">
+
+            <!-- Wallpaper di dalam layar HP -->
+            <div class="phone-wallpaper"></div>
+            <div class="wallpaper-overlay"></div>
+
+            <!-- Top Actions Bar -->
+            <div class="top-actions">
+                <button class="top-btn" title="Bagikan Hub"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+
+            <!-- Scrollable Content Screen -->
+            <div class="phone-screen">
+
+                <!-- Profile Section -->
+                <section class="profile-section">
+                    <div class="avatar-wrapper">
+                        <img src="assets/logo.png" alt="Avatar" class="avatar-img">
+                        <span class="status-dot"></span>
+                    </div>
+                    <h1 class="profile-name">
+                        Crescendelle
+                        <span class="verified"><i class="fa-solid fa-circle-check"></i></span>
+                    </h1>
+                    <p class="profile-handle">@crescendelle.my.id</p>
+                    <p class="profile-bio">Eksklusif Gaming, Teknologi, & Digital Sanctuary. Wadah kreator, coder, &
+                        penjelajah dunia digital.</p>
+                </section>
+
+                <!-- VIEW 1: HALAMAN UTAMA (TOMBOL LINK) -->
+                <div id="main-view" class="view-section active">
+                    <nav class="links-stack">
+                        <!-- Discord -->
+                        <a href="https://discord.gg/jnYpjWmjdz" target="_blank" class="link-btn">
+                            <div class="btn-icon discord"><i class="fa-brands fa-discord"></i></div>
+                            <div class="btn-text-box">
+                                <span class="btn-title">Gabung Discord</span>
+                                <span class="btn-desc">Ngobrol, mabar, & diskusi kode</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right btn-arrow"></i>
+                        </a>
+
+                        <!-- Portal Proyek -->
+                        <a href="#" target="_blank" class="link-btn">
+                            <div class="btn-icon web"><i class="fa-solid fa-code"></i></div>
+                            <div class="btn-text-box">
+                                <span class="btn-title">Portal Proyek & Karya Web</span>
+                                <span class="btn-desc">Eksplorasi showcase & karya member</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right btn-arrow"></i>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@crescendelle" target="_blank" class="link-btn">
+                            <div class="btn-icon tiktok"><i class="fa-brands fa-tiktok"></i></div>
+                            <div class="btn-text-box">
+                                <span class="btn-title">Arsip Konten & Highlights</span>
+                                <span class="btn-desc">Momen gaming & edit video</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right btn-arrow"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/crescendelle/" target="_blank" class="link-btn">
+                            <div class="btn-icon instagram"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="btn-text-box">
+                                <span class="btn-title">Galeri & Update Visual</span>
+                                <span class="btn-desc">Portofolio visual & info event</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right btn-arrow"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/share/g/1eb45H6qWb/" target="_blank" class="link-btn">
+                            <div class="btn-icon facebook"><i class="fa-brands fa-facebook"></i></div>
+                            <div class="btn-text-box">
+                                <span class="btn-title">Meme dan Flexing</span>
+                                <span class="btn-desc">Berkaryalah sepuasnya</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right btn-arrow"></i>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://chat.whatsapp.com/JmAnFdcP5F2EOo7dUn8t1c" target="_blank" class="link-btn">
+                            <div class="btn-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="btn-text-box">
+                                <span class="btn-title">Obrolan Langsung</span>
+                                <span class="btn-desc">Diskusi & Bantuan 24/7</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right btn-arrow"></i>
+                        </a>
+
+                        <!-- Donasi / VIP (Pemicu Form) -->
+                        <button id="btn-open-vip" class="link-btn vip style-button">
+                            <div class="btn-icon donate"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <div class="btn-text-box text-left">
+                                <span class="btn-title">Dukung Server & Kreator (VIP)</span>
+                                <span class="btn-desc">Kontribusi operasional komunitas</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right btn-arrow"></i>
+                        </button>
+                    </nav>
+
+                    <!-- Footer Sosial & Copyright -->
+                    <footer class="tree-footer">
+                        <div class="social-row">
+                            <a href="https://github.com/crescendelle" target="_blank" aria-label="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://discord.gg/jnYpjWmjdz" target="_blank" aria-label="Discord"><i
+                                    class="fa-brands fa-discord"></i></a>
+                            <a href="https://x.com/crescendelle" target="_blank" aria-label="X"><i
+                                    class="fa-brands fa-x"></i></a>
+                            <a href="https://t.me/crescendelle" target="_blank" aria-label="Telegram"><i
+                                    class="fa-brands fa-telegram"></i></a>
+                        </div>
+                        <p class="copyright">&copy; 2026 Crescendelle. All Rights Reserved.</p>
+                    </footer>
+                </div>
+
+                <!-- VIEW 2: HALAMAN FORMULIR DUKUNGAN VIP -->
+                <div id="form-view" class="view-section">
+                    <div class="sub-card">
+                        <div class="sub-header">
+                            <h2>Formulir Dukungan VIP</h2>
+                            <p>Isi data diri kamu sebelum melanjutkan pembayaran QRIS.</p>
+                        </div>
+                        <form id="vip-form" class="custom-form">
+                            <div class="form-group">
+                                <label><i class="fa-solid fa-user"></i> Nama Lengkap</label>
+                                <input type="text" id="nama" required placeholder="Masukkan nama kamu">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa-solid fa-envelope"></i> Email</label>
+                                <input type="email" id="email" required placeholder="nama@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa-solid fa-phone"></i> Nomor HP / WhatsApp</label>
+                                <input type="tel" id="whatsapp" required placeholder="08xxxxxxxxxx">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa-brands fa-discord"></i> Username Discord</label>
+                                <input type="text" id="discord" placeholder="Contoh: zharvian" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa-solid fa-rupiah-sign"></i> Nominal Dukungan (Rp)</label>
+                                <input type="number" id="nominal" min="1000" step="1"
+                                    placeholder="Masukkan nominal dukungan" required>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" id="btn-back-to-main" class="btn-secondary">Kembali</button>
+                                <button type="submit" class="btn-primary">Lanjut ke QRIS</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- VIEW 3: HALAMAN QRIS PEMBAYARAN -->
+                <div id="qris-view" class="view-section">
+                    <div class="sub-card qris-card">
+                        <div class="sub-header">
+                            <h2>Scan QRIS Pembayaran</h2>
+                            <p>Silakan scan kode QR di bawah menggunakan m-Banking atau E-Wallet pilihanmu.</p>
+                        </div>
+
+                        <!-- Kotak QRIS -->
+                        <div class="qris-box">
+                            <!-- Ganti src dengan link gambar QRIS asli milikmu -->
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=CrescendelleVIPSupport"
+                                alt="QRIS Code" class="qris-img">
+                            <div class="qris-info">
+                                <span class="qris-merchant">MERCHANT: CRESCENDELLE</span>
+                                <span class="qris-amount" id="display-nominal">Rp 25.000</span>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" id="btn-back-to-form" class="btn-secondary">Ubah Data</button>
+                            <button type="button" id="btn-finish" class="btn-success">Sudah Transfer</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
