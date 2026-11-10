@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputDiscord = document.getElementById('discord');
     const qrisImageElement = document.querySelector('.qris-img');
 
-    // Konfigurasi EmailJS (Ganti dengan ID milikmu dari dashboard EmailJS)
-    const EMAILJS_SERVICE_ID = 'GANTI_SERVICE_ID';
-    const EMAILJS_TEMPLATE_ID = 'GANTI_TEMPLATE_ID';
+    // KONFIGURASI EMAILJS
+    const EMAILJS_SERVICE_ID = 'service_n17r016';   
+    const EMAILJS_TEMPLATE_ID = 'template_arlmz0g';
 
     function switchView(targetView) {
         [mainView, formView, qrisView].forEach(view => view.classList.remove('active'));
