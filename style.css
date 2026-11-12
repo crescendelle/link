@@ -155,12 +155,10 @@ body {
     height: 90px;
     margin: 0 auto 12px auto;
     border-radius: 50%;
-    
-    /* Pindahkan border dan shadow ke wadah utamanya agar selalu di luar */
     border: 3px solid rgba(32, 90, 247, 0.6);
     box-shadow: 0 0 20px rgba(37, 99, 235, 0.48);
-    
-    overflow: hidden; /* Tetap dipasang agar gambar di dalamnya berbentuk lingkaran rapi */
+    overflow: hidden;
+    background-color: #000;
 }
 
 .avatar-img {
@@ -169,19 +167,17 @@ body {
     border-radius: 50%;
     object-fit: cover;
     
-    /* Hapus border di sini karena sudah dipindah ke wrapper */
-    border: none; 
-    box-shadow: none;
+    /* Mengatur posisi diamnya agar sedikit ke bawah dan sedikit diperbesar */
+    object-position: center 58%;
+    transform: scale(1.12);
     
-    /* Sesuaikan skala dikit saja (misal 1.05) agar pas menutup tepi hitam tanpa menutupi border */
-    object-position: center 70%; /* Ubah angka 58% jika ingin lebih turun atau naik */
-    transform: scale(1.15); 
+    /* Transisi khusus untuk animasi geraknya */
     transition: transform 0.3s ease;
 }
 
-/* Efek saat di-hover (hanya gambarnya yang membesar di dalam lingkaran border) */
+/* Saat di-hover, gabungkan posisi awal + scale yang lebih besar */
 .avatar-wrapper:hover .avatar-img {
-    transform: scale(1.15); 
+    transform: scale(1.22); /* Ubah angka ini kalau mau lebih besar/kecil saat di-hover */
 }
 
 .status-dot {
