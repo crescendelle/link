@@ -154,15 +154,23 @@ body {
     width: 90px;
     height: 90px;
     margin: 0 auto 12px auto;
+    overflow: hidden; /* Penting agar gambar yang membesar tidak keluar dari lingkaran */
+    border-radius: 50%; /* Menyamakan bentuk wadah dengan gambar */
 }
 
 .avatar-img {
-    width: 110px;
-    height: 110px;
-    border-radius: 10%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
     object-fit: cover;
-    border: solid rgba(32, 90, 247, 0.6);
+    border: 3px solid rgba(32, 90, 247, 0.6);
     box-shadow: 0 0 20px rgba(37, 99, 235, 0.48);
+    transition: transform 0.3s ease; /* Efek transisi halus saat membesar */
+}
+
+/* Efek saat kursor diarahkan ke gambar */
+.avatar-wrapper:hover .avatar-img {
+    transform: scale(1.15); /* Mengubah ukuran gambar sebesar 15% tanpa merusak border */
 }
 
 .status-dot {
