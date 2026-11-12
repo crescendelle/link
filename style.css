@@ -35,7 +35,7 @@ body {
 .global-wallpaper {
     position: fixed;
     inset: 0;
-    background: url('assets/crescent.jpg') no-repeat center center/cover;
+    background: url('assets/wall.jpg') no-repeat center center/cover;
     z-index: 0;
 }
 
