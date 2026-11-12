@@ -35,7 +35,7 @@ body {
 .global-wallpaper {
     position: fixed;
     inset: 0;
-    background: url('assets/crescent.jpg') no-repeat center center/cover;
+    background: url('assets/crescendelle.jpg') no-repeat center center/cover;
     z-index: 0;
 }
 
@@ -79,7 +79,7 @@ body {
 .phone-wallpaper {
     position: absolute;
     inset: 0;
-    background: url('assets/crescent.jpg') no-repeat center center/cover;
+    background: url('assets/crescendelle.jpg') no-repeat center center/cover;
     filter: brightness(0.48) saturate(1.2) hue-rotate(8deg);
     z-index: 0;
 }
@@ -161,7 +161,7 @@ body {
     height: 90px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(245, 158, 11, 0.6);
+    border: 3px solid rgba(32, 90, 247, 0.6);
     box-shadow: 0 0 20px rgba(37, 99, 235, 0.48);
 }
 
