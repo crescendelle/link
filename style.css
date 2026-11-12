@@ -154,24 +154,33 @@ body {
     width: 90px;
     height: 90px;
     margin: 0 auto 12px auto;
-    overflow: hidden; /* Penting agar gambar yang membesar tidak keluar dari lingkaran */
-    border-radius: 50%; /* Menyamakan bentuk wadah dengan gambar */
+    border-radius: 50%;
+    
+    /* Pindahkan border dan shadow ke wadah utamanya agar selalu di luar */
+    border: 3px solid rgba(32, 90, 247, 0.6);
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.48);
+    
+    overflow: hidden; /* Tetap dipasang agar gambar di dalamnya berbentuk lingkaran rapi */
 }
 
 .avatar-img {
-    width: 90px;
-    height: 90px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(32, 90, 247, 0.6);
-    box-shadow: 0 0 20px rgba(37, 99, 235, 0.48);
-    transform: scale(1.18);
-    transition: transform 0.3s ease; /* Efek transisi halus saat membesar */
+    
+    /* Hapus border di sini karena sudah dipindah ke wrapper */
+    border: none; 
+    box-shadow: none;
+    
+    /* Sesuaikan skala dikit saja (misal 1.05) agar pas menutup tepi hitam tanpa menutupi border */
+    transform: scale(1.05); 
+    transition: transform 0.3s ease;
 }
 
-/* Efek saat kursor diarahkan ke gambar */
+/* Efek saat di-hover (hanya gambarnya yang membesar di dalam lingkaran border) */
 .avatar-wrapper:hover .avatar-img {
-    transform: scale(1.15); /* Mengubah ukuran gambar sebesar 15% tanpa merusak border */
+    transform: scale(1.15); 
 }
 
 .status-dot {
