@@ -79,7 +79,7 @@ body {
 .phone-wallpaper {
     position: absolute;
     inset: 0;
-    background: url('assets/wallpaper.jpg') no-repeat center center/cover;
+    background: url('assets/crescent.jpg') no-repeat center center/cover;
     filter: brightness(0.48) saturate(1.2) hue-rotate(8deg);
     z-index: 0;
 }
